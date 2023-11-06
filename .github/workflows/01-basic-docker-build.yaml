@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
       - name: Build and configure containers
-        run: docker-compose up -d --build
+        run: docker compose up -d --build
         
       - name: Docker build
         uses: docker/build-push-action@v5
